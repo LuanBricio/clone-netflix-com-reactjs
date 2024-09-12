@@ -26,13 +26,13 @@ export default {
         return [{
                 slug: 'originals',
                 title: 'Originais do Netflix',
-                items: await basicFetch(`/discover/tv?with_network=213`)
+                items: await basicFetch(`/discover/tv?with_network=213&language=pt-BR&api_key=${API_KEY}`)
 
             },
             {
                 slug: 'trending',
                 title: 'Recomendados para Você',
-                items: []
+                items: await basicFetch(`/trending/all/week&language=pt-BR&api_key=${API_KEY}`)
             },
             {
                 slug: 'toprated',
