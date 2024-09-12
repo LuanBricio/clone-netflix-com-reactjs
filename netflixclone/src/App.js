@@ -2,8 +2,6 @@ import React from "react";
 
 export default () => {
     return ( <
-        div >
-        olá mundo <
-        /div>
+        h1 > Olá Mundo! < /h1>
     )
 }
